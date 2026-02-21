@@ -12,8 +12,8 @@ public class BankAccount {
     int id;
     double balance;
 
-    double riseSum (double upValue){
-        balance = balance + upValue;
+    double riseSum (double upSum){
+        balance = balance + upSum;
         return balance;
     }
 
@@ -37,6 +37,10 @@ class BankAccountTets {
         BankAccount myAccount = new BankAccount("Pavel", 27, 470);
         myAccount.riseSum(230);
         myAccount.showInfo();
+
+        myAccount.downSum(230);
+        myAccount.showInfo();
+
 
     }
 
